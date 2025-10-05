@@ -1,0 +1,12 @@
+#!/bin/bash
+# Create a script that prints all possible combinations of two letters, except oo.
+for first in {a..z}; do
+    for second in {a..z}; do
+        if [[ $first == "o" && $second == "o" ]]; then
+            continue
+        fi
+        echo "$first$second"
+    done
+done
+
+# for i in {a..z};do for j in {a..z};do [ $i$j != oo ]&&echo $i$j;done;done
