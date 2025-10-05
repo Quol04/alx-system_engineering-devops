@@ -1,3 +1,2 @@
 #!/bin/bash
-# Write a script that prints a number with two decimal places, followed by a new line.
 printf "%.2f\n" "$NUM"

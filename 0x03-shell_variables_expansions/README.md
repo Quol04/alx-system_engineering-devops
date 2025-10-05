@@ -93,6 +93,21 @@ Some scripts rely on environment variables. You can export them inline or before
   - Purpose: print all two-letter lowercase combinations in alphabetical order, except `oo`.
   - Test: `./0x03-shell_variables_expansions/12-combinations | grep -xv oo | head -n 5` (first lines should be `aa`, `ab`, `ac`, ...).
 
+# For my own use 
+  
+ - Create a script that prints all possible combinations of two letters, except oo.
+
+ ```bash
+for first in {a..z}; do
+    for second in {a..z}; do
+        if [[ $first == "o" && $second == "o" ]]; then
+            continue
+        fi
+        echo "$first$second"
+    done
+done
+```
+
 - 13-print_float
 
   - Purpose: print the value of `$NUM` with exactly two decimal places.

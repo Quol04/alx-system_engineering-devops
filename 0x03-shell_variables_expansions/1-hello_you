@@ -1,3 +1,2 @@
 #!/bin/bash
-# Display "Hello" followed by the current user's name
 echo "Hello, $USER"
